@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="dark-theme">
+    <head>
+        <title>Une page HTML vierge</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <!-- boutton d'impression -->
+        <!-- <button class="print-btn" onclick="window.print()">Imprimer le CV</button> -->
+        
+        <svg xmlns="http://www.w3.org/2000/svg"onclick="window.print()" width="16" height="16" fill="currentColor" class="bi bi-printer print-logo" viewBox="0 0 16 16">
+            <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+            <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+          </svg>
+
+        <!-- theme -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun switch-theme " viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun-fill switch-theme d-none" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+        <!-- All page -->
+        <div class="page">
+        <!-- Left part -->
+        <div class="left-container">
+            <!-- PP, fullname, work -->
+            <div class="left-header">
+            <img class="PP" src="/img/profile-pic-dark.png" alt="Photo de ma tête avec un arrière plan vert" class="pp">
+            <h1 class="left-header-fullname">NACHER Grégory</h1>
+            <h2 class="left-header-work primary">Développeur fullstack</h2>
+            </div>
+            <!-- profile -->
+            <div class="profile-container">
+                <h4 class="container-title">Profil</h4>
+                <span class="line"></span>
+                <p class="profile-container-text">Ayant confirmé ma passion pour le développement web, je souhaite me spécialiser et monter en compétences grâce à une alternance en CDA. 
+                    Je suis toujours prêt à m’investir dans mes futurs missions en entreprise.
+                </p>
+            </div>
+            <!-- contact -->
+            <div class="contact-container">
+                <h4 class="container-title">Contact</h4>
+                <span class="line"></span>
+                <ul class="contact-container-list">
+                    <li class="contact-container-list-phone">Tel: 06 66 07 35 58</li>
+                    <li class="contact-container-list-email">Email: g.nacher@hotmail.com</li>
+                    <li class="contact-container-list-lkdin">LinkedIn: <a href="https://www.linkedin.com/in/in/nachergrégory">in/nachergrégory</a></li>
+                    <li class="contact-container-list-github">Github: <a href="https://github.com/Goadney">Goadney</a></li>
+                </ul>
+            </div>
+            <!-- tech skills -->
+            <div class="tech-skills-container">
+                <h4 class="container-title">Compétences techniques</h4>
+                <span class="line"></span>
+                <ul class="tech-skills-container-list">
+                    <li class="tech-skills-container-list-line">VScode / Visual Studio</li>
+                    <li class="tech-skills-container-list-line">Git / Github</li>
+                    <li class="tech-skills-container-list-line">Postman</li>
+                    <li class="tech-skills-container-list-line">MySql Workbench / PhpMyAdmin</li>
+                    <li class="tech-skills-container-list-line">Figma / Adobe XD </li>
+                    <li class="tech-skills-container-list-line">Suite Adobe</li>
+                    <li class="tech-skills-container-list-line">Cisco Packet Tracer</li>
+                </ul>
+                <h4 class="container-title">Stack</h4>
+                <span class="line"></span>
+
+                <div class="stack-container">
+                    <img src="/img/stack/html.png" alt="logo du langage HTML">
+                    <img src="/img/stack/css.png" alt="logo du langage CSS">
+                    <img src="/img/stack/scss.png" alt="logo du langage SCSS">
+                    <img src="/img/stack/javascript.png" alt="logo du langage Javascript">
+                    <img src="/img/stack/php.png" alt="logo du langage PHP">
+                    <img src="/img/stack/symfony.png" alt="logo du langage Symfony">
+                </div>
+            </div>
+            <!-- hobbies -->
+            <div class="hobbies-container">
+                <h4 class="container-title">Loisirs</h4>
+                <span class="line"></span>
+                <div class="hobbies-container-img">
+                    <img class="manette" src="/img/loisirs/manette-dark-theme.png" alt="Manette de jeux vidéos">
+                    <img class="musique" src="/img/loisirs/musique-dark-theme.png" alt="Note de musique">
+                    <img class="dev" src="/img/loisirs/dev-dark-theme.png" alt="Logo de balise HTML, pour siginifer la programmation">
+                </div>
+            </div>
+        <!-- END Left partl -->
+        </div>
+
+        <!-- Right part -->
+        <div class="right-container">
+            <!-- Header-->
+            <div class="header-container">
+                <h2 class="header-container-contract">Contrat d'apprentissage</h2>
+                <p class="header-container-contract-duration primary">3 semaine entreprise / 1 semaine formation</p>
+            </div>
+            <!-- My projects-->
+            <div class="project-container">
+                <h4 class="container-title">Mes projets</h4>
+                <span class="line"></span>
+            <!-- one project -->
+                <h5 class="project-container-name primary">Portfolio</h5>
+                <p class="project-container-description">Portfolio web proposant la gestion des données à l’aide d’un <span class="primary"> panel administrateur</span>.</p>
+                <p class="project-container-description"> <span class="primary">Authentification</span> publique offrant la possibilité de poster un avis.</p>
+                <p class="project-container-description">Différent thème proposé pour une meilleure  <span class="primary">accessibilité.</span></p>
+                <ul class="list">
+                    <li class="list-lang">Symfony</li>
+                    <li class="list-lang">Php</li>
+                    <li class="list-lang">Html</li>
+                    <li class="list-lang">Scss</li>
+                    <li class="list-lang">Javascript</li>
+                </ul>
+            <!-- END oneprojects-->
+            <!-- one project -->
+                <h5 class="project-container-name primary" >Menu d'interaction (KAPT)</h5>
+                <p class="project-container-description">Menu déroulant permettant des <span class="primary">interactions</span> à l’aide de <span class="primary">requêtes</span> ou avec une API.</p>
+                <p class="project-container-description">L’objectif est de réduire les <span class="primary">tickets</span> (problèmes clients) en lui permettant  de <span class="primary">débugger</span> lui même à l’aide de boutons et d’informations affiché dans un menu déroulant.</p>
+                <ul class="list">
+                    <li class="list-lang">Django</li>
+                    <li class="list-lang">Python</li>
+                    <li class="list-lang">Html</li>
+                    <li class="list-lang">Css</li>
+                    <li class="list-lang">Postman</li>
+                    <li class="list-lang">Docker</li>
+                    <li class="list-lang">En ligne</li>
+                </ul>
+            <!-- END oneprojects-->
+            <!-- one project -->
+                <h5 class="project-container-name primary">Application de gestion</h5>
+                <p class="project-container-description">Application proposant la gestion et l’optimisation de comptes en <span class="primary">grande quantité</span> permettant l’accès à des <span class="primary">offres privés</span>.</p>                
+                <ul class="list">
+                    <li class="list-lang">C#</li>
+                    <li class="list-lang">Postman</li>
+                    <li class="list-lang">HTTP Debugger</li>
+                    <li class="list-lang">+400 sub/month</li>
+                </ul>
+            <!-- END oneprojects-->
+            <!-- one project -->
+                <h5 class="project-container-name primary">Site mini-jeu</h5>
+                <p class="project-container-description">Site vitrine développé lors de ma formation développeur web et web mobile.</p>
+                <p class="project-container-description">Il répondait aux exercices d’<span class="primary">algorithmie</span> demandé tel qu’un jeu du pendu.</p>
+                <ul class="list">
+                    <li class="list-lang">Html</li>
+                    <li class="list-lang">Css</li>
+                    <li class="list-lang">Javascript</li>
+                </ul>
+            <!-- END oneprojects-->
+            </div>
+            <!-- Experiences -->
+            <div class="experiences-container">
+                <h4 class="container-title">Experiences</h4>
+                <span class="line"></span>
+                <!-- one experience -->
+                <h5 class="experiences-container-name primary">Kapt</h5>
+                <p class="experiences-container-info primary">Alixan | 31/05/2023 - 28/07/2023 | Stage</p>
+                <ul class="disc-list">
+                    <li class="disc-list-line">Développement d’un menu déroulant sur la <span class="primary">toolbar</span> de <span class="primary">Django</span>.</li>
+                    <li class="disc-list-line">Analyse de <span class="primary">requêtes</span> et déchiffrage de token encodé en base64.</li>
+                    <li class="disc-list-line">Utilisation d’<span class="primary">API</span> pour la récupération d’informations. </li>
+                </ul>
+                <ul class="list">
+                    <li class="list-lang">cf. projet n°2</li>
+                </ul>
+                <!-- end one experience -->
+
+            </div>
+            <!-- Formations -->
+            <div class="formations-container">
+                <h4 class="container-title">Formations</h4>
+                <span class="line"></span>
+                <!-- one formation -->
+                <h5 class="formations-container-name primary">Developpeur web & web mobile </h5>
+                <p class="formations-container-info primary">CCI de Valence | 2022 - 2023</p>
+                <ul class="disc-list">
+                    <li class="disc-list-line"><span class="underline">Front</span> : Html 5, Css 3 et Scss, Javascript</li>
+                    <li class="disc-list-line"><span class="underline">Back</span> : Php 8.2 et son framework Symfony 6.3</li>
+                    <li class="disc-list-line"><span class="underline">Divers</span> : Git & Github, Figma & Adobe XD, Méthode AGILE</li>
+                </ul>
+                <!-- end one formation -->
+                <!-- one formation -->
+                <h5 class="formations-container-name primary">IUT Réseaux & télécommunication</h5>
+                <p class="formations-container-info primary">IUT de Valence | 2020 - 2022</p>
+                <ul class="disc-list">
+                    <li class="disc-list-line"><span class="underline">Réseaux</span> : Mise en place d’<span class="primary">infrastructures réseau</span>.</li>
+                    <li class="disc-list-line"><span class="underline">Téléphonie</span> en place de la <span class="primary">téléphonie</span> dans une <span class="primary">infrastructure</span>.</li>
+                </ul>
+                <!-- end one formation -->
+            </div>
+            <!-- END Right part -->
+        </div>
+        <!-- END page -->
+    </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,354 @@
+// Theme mixin
+// je déclare ma variable theme avec chaque theme (dark/light) contetenant ses variables et leurs valeurs
+$themes: (
+    dark: (background : #13131e,
+        background-page: #353535,
+        primary: #29f3c3,
+        text: #f4f4f4,
+        text-inversed : #13131e),
+    light: (background : #d1d1d1,
+        background-page: #f4f4f4,
+        primary: #4276b9,
+        text: #353535,
+        text-inversed : #f4f4f4),
+
+);
+
+// mixin (classe qui a besoin qu'on la complete) 
+@mixin themify($themes) {
+
+    //pour chaque themes (dark/light) on passe $name le nom du theme et values ses variables contenant les valeurs
+    @each $name , $values in $themes {
+        .#{$name}-theme {
+            $theme-map: $values !global;
+            @content;
+        }
+    }
+}
+
+//fonction qui va etre appelé dans les autres fichier pour demander une valeur selon les themes
+@function themed($key) {
+    @return map-get($theme-map, $key);
+}
+
+
+// theme
+
+@include themify($themes) {
+    .line {
+        background-color: themed(primary);
+    }
+
+    .primary {
+        color: themed(primary);
+    }
+
+    .list-lang {
+        border: 1px solid themed(primary);
+
+        &:hover {
+            background-color: themed(primary);
+            color: themed(background-page);
+        }
+    }
+
+    .underline {
+        text-decoration-color: themed(primary);
+
+    }
+
+    .left-container {
+        background-color: themed(background-page);
+    }
+
+    .contact-container {
+        a {
+            &:hover {
+                color: themed(primary);
+            }
+        }
+
+    }
+
+
+    .tech-skills-container {
+        .stack-container {
+            background-color: themed(primary);
+        }
+    }
+
+    .right-container {
+        background-color: themed(background-page);
+    }
+
+    .print-btn {
+
+        background: themed(primary);
+        color: themed(background-page);
+
+        &:hover {
+            background-color: themed(background-page);
+            color: themed(background);
+        }
+    }
+
+    body {
+        background-color: themed(background);
+        color: themed(text);
+    }
+
+    a {
+        color: themed(text);
+    }
+}
+
+//reset css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 13px;
+
+
+}
+
+ul {
+    list-style-type: none;
+
+    a {
+        text-decoration: none;
+
+    }
+}
+
+
+//structure 
+* {
+    transition: all .3s ease;
+}
+
+
+
+
+.container-title {
+    text-transform: uppercase;
+    margin-top: .8em;
+    font-size: 1.4em;
+}
+
+.line {
+    display: block;
+    width: 30%;
+    height: 3px;
+    margin: .2em 0 .5em .1em;
+
+
+}
+
+// .primary {
+//     color: $primary;
+// }
+
+.list {
+    display: flex;
+    margin-top: .5em;
+
+    &-lang {
+        // font-size: .8em;
+        border-radius: 5px;
+        padding: .2em .3em;
+        margin-right: .5em;
+        font-weight: bold;
+        transition: all .3s ease;
+
+
+    }
+}
+
+.disc-list {
+    &-line {
+        margin-left: 1em;
+        list-style-type: disc;
+        margin-top: .2em;
+    }
+}
+
+.underline {
+    text-decoration: underline 2px;
+}
+
+.d-none {
+    display: none;
+}
+
+// styles
+.page {
+    display: flex;
+    width: 21cm;
+    height: 29.7cm;
+    margin: 5em auto;
+    box-shadow: 0 0 .8cm rgba(0, 0, 0, 0.699);
+}
+
+.left-container {
+    width: 35%;
+    padding: 1.5em;
+
+    .left-header {
+
+        img {
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        &-fullname {
+            margin-top: .5em;
+            font-size: 1.5em;
+        }
+
+        &-work {
+            font-size: 1em;
+        }
+    }
+
+
+
+    .tech-skills-container {
+
+        .stack-container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: .5em;
+            border-radius: 5px;
+
+            img {
+                object-fit: contain;
+                width: 20%;
+                margin: .2em .5em 0em 0;
+            }
+        }
+    }
+
+    .hobbies-container {
+        &-img {
+            display: flex;
+
+            img {
+                width: 20%;
+                margin-right: .8em;
+                object-fit: contain;
+            }
+
+        }
+    }
+}
+
+.right-container {
+    width: 65%;
+    padding: .5em .8em .5em .3em;
+
+    .header-container {
+        margin-top: .8em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        &-contract {
+            font-size: 1.9em;
+
+            &-duration {
+                font-size: 1em;
+            }
+        }
+
+    }
+
+    .project-container {
+        &-name {
+            margin: .9em 0 .1em 0;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+
+        &-description {
+            font-size: 1em;
+        }
+    }
+
+    .experiences-container {
+        &-name {
+            margin-bottom: .2em;
+            font-size: 1.2em;
+        }
+
+        &-info {
+            font-style: italic;
+        }
+
+    }
+
+    .formations-container {
+        &-name {
+            margin: .9em 0 .2em 0;
+            font-size: 1.2em;
+        }
+
+        &-info {
+            font-style: italic;
+        }
+
+    }
+}
+
+
+
+// media query imprimante
+.print-logo {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+@media print {
+
+    .page {
+        box-shadow: none;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .print-btn {
+        display: none;
+    }
+
+
+}
+
+//theme mixin 
+// theme
+.switch-theme {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+    font-size: 2em;
+
+
+}

@@ -1,0 +1,266 @@
+.dark-theme .line {
+  background-color: #29f3c3;
+}
+.dark-theme .primary {
+  color: #29f3c3;
+}
+.dark-theme .list-lang {
+  border: 1px solid #29f3c3;
+}
+.dark-theme .list-lang:hover {
+  background-color: #29f3c3;
+  color: #353535;
+}
+.dark-theme .underline {
+  text-decoration-color: #29f3c3;
+}
+.dark-theme .left-container {
+  background-color: #353535;
+}
+.dark-theme .contact-container a:hover {
+  color: #29f3c3;
+}
+.dark-theme .tech-skills-container .stack-container {
+  background-color: #29f3c3;
+}
+.dark-theme .right-container {
+  background-color: #353535;
+}
+.dark-theme .print-btn {
+  background: #29f3c3;
+  color: #353535;
+}
+.dark-theme .print-btn:hover {
+  background-color: #353535;
+  color: #13131e;
+}
+.dark-theme body {
+  background-color: #13131e;
+  color: #f4f4f4;
+}
+.dark-theme a {
+  color: #f4f4f4;
+}
+
+.light-theme .line {
+  background-color: #4276b9;
+}
+.light-theme .primary {
+  color: #4276b9;
+}
+.light-theme .list-lang {
+  border: 1px solid #4276b9;
+}
+.light-theme .list-lang:hover {
+  background-color: #4276b9;
+  color: #f4f4f4;
+}
+.light-theme .underline {
+  text-decoration-color: #4276b9;
+}
+.light-theme .left-container {
+  background-color: #f4f4f4;
+}
+.light-theme .contact-container a:hover {
+  color: #4276b9;
+}
+.light-theme .tech-skills-container .stack-container {
+  background-color: #4276b9;
+}
+.light-theme .right-container {
+  background-color: #f4f4f4;
+}
+.light-theme .print-btn {
+  background: #4276b9;
+  color: #f4f4f4;
+}
+.light-theme .print-btn:hover {
+  background-color: #f4f4f4;
+  color: #d1d1d1;
+}
+.light-theme body {
+  background-color: #d1d1d1;
+  color: #353535;
+}
+.light-theme a {
+  color: #353535;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+ul {
+  list-style-type: none;
+}
+ul a {
+  text-decoration: none;
+}
+
+* {
+  transition: all 0.3s ease;
+}
+
+.container-title {
+  text-transform: uppercase;
+  margin-top: 0.8em;
+  font-size: 1.4em;
+}
+
+.line {
+  display: block;
+  width: 30%;
+  height: 3px;
+  margin: 0.2em 0 0.5em 0.1em;
+}
+
+.list {
+  display: flex;
+  margin-top: 0.5em;
+}
+.list-lang {
+  border-radius: 5px;
+  padding: 0.2em 0.3em;
+  margin-right: 0.5em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.disc-list-line {
+  margin-left: 1em;
+  list-style-type: disc;
+  margin-top: 0.2em;
+}
+
+.underline {
+  text-decoration: underline 2px;
+}
+
+.d-none {
+  display: none;
+}
+
+.page {
+  display: flex;
+  width: 21cm;
+  height: 29.7cm;
+  margin: 5em auto;
+  box-shadow: 0 0 0.8cm rgba(0, 0, 0, 0.699);
+}
+
+.left-container {
+  width: 35%;
+  padding: 1.5em;
+}
+.left-container .left-header img {
+  margin: 0 auto;
+  width: 90%;
+}
+.left-container .left-header-fullname {
+  margin-top: 0.5em;
+  font-size: 1.5em;
+}
+.left-container .left-header-work {
+  font-size: 1em;
+}
+.left-container .tech-skills-container .stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+.left-container .tech-skills-container .stack-container img {
+  object-fit: contain;
+  width: 20%;
+  margin: 0.2em 0.5em 0em 0;
+}
+.left-container .hobbies-container-img {
+  display: flex;
+}
+.left-container .hobbies-container-img img {
+  width: 20%;
+  margin-right: 0.8em;
+  object-fit: contain;
+}
+
+.right-container {
+  width: 65%;
+  padding: 0.5em 0.8em 0.5em 0.3em;
+}
+.right-container .header-container {
+  margin-top: 0.8em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.right-container .header-container-contract {
+  font-size: 1.9em;
+}
+.right-container .header-container-contract-duration {
+  font-size: 1em;
+}
+.right-container .project-container-name {
+  margin: 0.9em 0 0.1em 0;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+.right-container .project-container-description {
+  font-size: 1em;
+}
+.right-container .experiences-container-name {
+  margin-bottom: 0.2em;
+  font-size: 1.2em;
+}
+.right-container .experiences-container-info {
+  font-style: italic;
+}
+.right-container .formations-container-name {
+  margin: 0.9em 0 0.2em 0;
+  font-size: 1.2em;
+}
+.right-container .formations-container-info {
+  font-style: italic;
+}
+
+.print-logo {
+  position: absolute;
+  top: 1em;
+  right: 2em;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+@media print {
+  .page {
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .print-btn {
+    display: none;
+  }
+}
+.switch-theme {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+/*# sourceMappingURL=main.css.map */
