@@ -107,7 +107,7 @@ ul a {
 }
 
 * {
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .container-title {
@@ -252,6 +252,9 @@ ul a {
     padding: 0;
   }
   .print-btn {
+    display: none;
+  }
+  .switch-theme {
     display: none;
   }
 }
