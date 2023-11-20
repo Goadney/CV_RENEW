@@ -131,7 +131,7 @@ ul {
 
 //structure 
 * {
-    transition: all .3s ease;
+    transition: color .3s ease;
 }
 
 
@@ -166,7 +166,7 @@ ul {
         padding: .2em .3em;
         margin-right: .5em;
         font-weight: bold;
-        transition: all .3s ease;
+        transition: color .3s ease;
 
 
     }
@@ -337,6 +337,10 @@ ul {
     .print-btn {
         display: none;
     }
+
+    .switch-theme {
+        display: none;
+    }   
 
 
 }

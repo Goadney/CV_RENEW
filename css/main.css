@@ -107,7 +107,7 @@ ul a {
 }
 
 * {
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .container-title {
@@ -132,7 +132,7 @@ ul a {
   padding: 0.2em 0.3em;
   margin-right: 0.5em;
   font-weight: bold;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .disc-list-line {
@@ -252,6 +252,9 @@ ul a {
     padding: 0;
   }
   .print-btn {
+    display: none;
+  }
+  .switch-theme {
     display: none;
   }
 }
