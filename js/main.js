@@ -59,10 +59,12 @@ function switchLogo() {
 
 function printChange() {
   // passer le theme en light
+  const THEME = sessionStorage.getItem("theme");
+  HTML.classList.remove(THEME + "-theme");
   HTML.classList.add("light-theme");
   switchLogo();
   window.print();
   HTML.classList.remove("light-theme");
-  HTML.classList.add("dark-theme");
+  HTML.classList.add(THEME + "-theme");
   switchLogo();
 }
